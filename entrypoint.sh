@@ -7,8 +7,8 @@ echo "${GIT_DEPLOY_KEY}" > /root/.ssh/id_rsa && \
 chmod 400 /root/.ssh/id_rsa
 
 echo '=================== Sync with mirror git ==================='
-git remote -vv
 git checkout master
 git status
 git remote set-url --add --push origin ${TARGET_GIT}
+git remote -vv
 git push
