@@ -11,6 +11,6 @@ git checkout master
 git status
 git remote set-url --add --push origin ${TARGET_GIT}
 git remote -vv
-git config user.name "${GITHUB_ACTOR}" && \
-git config user.email "${GITHUB_ACTOR}@users.noreply.github.com" && \
+git config user.name "rick"
+git config user.email "rick@jenkins-zh.cn"
 git push
