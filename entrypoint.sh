@@ -11,7 +11,7 @@ git checkout master
 git status
 git remote set-url --add --push origin ${TARGET_GIT}
 git remote -vv
-git config --gloabl user.name "rick"
-git config --gloabl user.email "rick@jenkins-zh.cn"
+git config --global user.name "rick"
+git config --global user.email "rick@jenkins-zh.cn"
 echo 'ready to push'
 git push origin master
