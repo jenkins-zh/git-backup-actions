@@ -2,9 +2,10 @@
 
 GitHub Action for backup your git repository.
 
-**restriction**
+## Supported Git Provider
 
-Now, only `https://gitee.com` is supported.
+* [gitee](https://gitee.com)
+* [CodeChina](https://codechina.csdn.net/)
 
 ## Create Deploy Key
 
