@@ -9,8 +9,8 @@ chmod 400 /root/.ssh/id_rsa
 
 echo '=================== Sync with mirror git ==================='
 git version
-git checkout master
 git fetch --unshallow origin
+git checkout master
 git status
 git remote add backup ${TARGET_GIT}
 git remote -vv
