@@ -14,6 +14,7 @@ git checkout master
 git status
 git remote add backup ${TARGET_GIT}
 git remote -vv
+git config --global --add safe.directory /github/workspace
 git config --global user.name "${GITHUB_ACTOR}"
 git config --global user.email "${GITHUB_ACTOR}@users.noreply.github.com"
 echo 'ready to push'
