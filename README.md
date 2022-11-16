@@ -16,8 +16,9 @@ GitHub Action for backup your git repository.
 
 ## Environment Variables
 
-- `GIT_DEPLOY_KEY` - *Required* your deploy key (ssh private key) which has **Write access**
-- `TARGET_GIT` : **required**, your backup git repository (please use ssh or git protocol)
+- `GIT_DEPLOY_KEY`: **Required**, your deploy key (ssh private key) which has **Write access**
+- `TARGET_GIT`: **required**, your backup git repository (please use ssh or git protocol)
+- `BRANCH`: **required**, the branch you want to backup
 
 ```
 name: Backup Git Repository
@@ -37,4 +38,5 @@ jobs:
       env:
         GIT_DEPLOY_KEY: ${{ secrets.GIT_DEPLOY_KEY }}
         TARGET_GIT: "git@gitee.com:surenpi/surenpi.git"
+        BRANCH: master
 ```
