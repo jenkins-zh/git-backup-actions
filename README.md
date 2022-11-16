@@ -16,7 +16,7 @@ GitHub Action for backup your git repository.
 
 ## Environment Variables
 
-- `GIT_DEPLOY_KEY` - *Required* your deploy key which has **Write access**
+- `GIT_DEPLOY_KEY` - *Required* your deploy key (ssh private key) which has **Write access**
 - `TARGET_GIT` : **required**, your backup git repository (please use ssh or git protocol)
 
 ```
