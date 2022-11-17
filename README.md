@@ -18,7 +18,7 @@ GitHub Action for backup your git repository.
 
 - `GIT_DEPLOY_KEY`: **Required**, your deploy key (ssh private key) which has **Write access**
 - `TARGET_GIT`: **required**, your backup git repository (please use ssh or git protocol)
-- `BRANCH`: **required**, the branch you want to backup
+- `BRANCH`: **optional**, the branch you want to backup (default value is `master`)
 
 ```
 name: Backup Git Repository
